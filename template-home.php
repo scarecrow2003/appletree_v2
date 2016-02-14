@@ -47,7 +47,6 @@ get_header(); the_post(); ?>
         </div>
     </div>
     <div class="row wrapper content">
-        <!--<div class="clearfix"></div>-->
         <div class="apple-sep">
             <div class="popular"></div>
         </div>

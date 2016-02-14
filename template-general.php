@@ -9,11 +9,12 @@
 
 get_header(); the_post(); ?>
 <?php if( is_page() ): ?>
-    <div class="row wrapper">
+    <div class="row wrapper banner">
         <div class="col-xs-12">
             <img src="<?php echo get_post_meta(get_the_ID(), 'banner', true); ?>" class="img-responsive" alt="Banner"/>
         </div>
-        <div class="clearfix"></div>
+    </div>
+    <div class="row wrapper content">
         <div class="apple-sep">
             <div class="popular"></div>
         </div>

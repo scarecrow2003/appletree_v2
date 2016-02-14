@@ -9,7 +9,7 @@
 
 get_header(); the_post(); ?>
 <?php if( is_page() ): ?>
-    <div class="row wrapper">
+    <div class="row wrapper content">
         <div class="col-xs-12">
             <h1><?php _e(get_post_meta(get_the_ID(), 'h1', true), 'appletreesg.com'); ?></h1>
         </div>
