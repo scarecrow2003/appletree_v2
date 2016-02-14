@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: appletreesg.com 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-24 00:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Nicolas <scarecrow2003@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: functions.php:5
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:5
+msgid "Extra Menu"
+msgstr ""
+
+#: header.php:59
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: header.php:103
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"您使用的游览器<strong>版本过低</strong>。为了改善您的体验，请<a href="
+"\"http://browsehappy.com/\">升级您的浏览器</a>。"
+
+#: node_modules/grunt-pot/test/fixtures/some-file.php:3
+msgid "I'm a translatable string."
+msgstr ""
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
+msgid "Me too"
+msgstr ""
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
+#, php-format
+msgid "I have %d apple"
+msgid_plural "I have %d apples"
+msgstr[0] ""
+msgstr[1] ""
+
+#. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
+msgid "yyyy-mm-dd"
+msgstr ""
+
+#menu
+#msgid "GALLERIES"
+#msgstr "作品"
+
+#msgid "RECENT"
+#msgstr "最近拍摄"
+
+#msgid "PROMOTION"
+#msgstr "优惠"
+
+#msgid "FAQ"
+#msgstr "常见问题"
+
+#msgid "MATERNITY"
+#msgstr "好孕妈妈"
+
+#msgid "NEW BORN"
+#msgstr "新生儿"
+
+#msgid "BABY"
+#msgstr "婴儿"
+
+#msgid "PARTY"
+#msgstr "聚会"
+
+#msgid "CHILDREN"
+#msgstr "儿童"
+
+#msgid "FAMILY"
+#msgstr "全家福"
+
+#msgid "SENIOR"
+#msgstr "写真"
+
+#msgid "COMMERCIAL"
+#msgstr "商业"
+
+
+
+
+
+msgid "Maternity"
+msgstr "好孕妈妈"
+
+msgid "New Born"
+msgstr "新生儿"
+
+msgid "Baby"
+msgstr "婴儿"
+
+msgid "Party"
+msgstr "聚会"
+
+msgid "Children"
+msgstr "儿童"
+
+msgid "Family"
+msgstr "全家福"
+
+msgid "Senior"
+msgstr "写真"
+
+msgid "Commercial"
+msgstr "商业"
+
+msgid "Baby Photography"
+msgstr "儿童摄影"
+
+msgid "Contact Us"
+msgstr "联系我们"
+
+msgid "Gallery"
+msgstr "作品展示"
+
+msgid "Our Gallery"
+msgstr "作品展示"
+
+msgid "Recent Shooting"
+msgstr "最近拍摄"
+
+msgid "Our Promotions"
+msgstr "最近促销"
+
+msgid "Our Package"
+msgstr "价格"
+
+msgid "FAQ"
+msgstr "常见问题"
+
+msgid "Frequently Asked Questions"
+msgstr "常见问题"
+
+msgid "New Born Photos"
+msgstr "新生儿照片"
+
+msgid "Maternity Photos"
+msgstr "好孕妈妈"
+
+msgid "Baby Photos"
+msgstr "婴儿照片"
+
+msgid "Party Photos"
+msgstr "聚会照片"
+
+msgid "Children Photos"
+msgstr "儿童照片"
+
+msgid "Family Photos"
+msgstr "全家福照片"
+
+msgid "Portraits"
+msgstr "写真照片"
+
+msgid "Commercial Photos"
+msgstr "商业照片"
+
+msgid "Studio Photos"
+msgstr "影棚照片"
+
+msgid "Outdoor Photos"
+msgstr "外景照片"
+
+#: header.php
+msgid "About"
+msgstr "关于"

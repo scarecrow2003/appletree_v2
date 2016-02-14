@@ -1,0 +1,22 @@
+{
+  "name": "grunt-appletree",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-copy-to": "0.0.10",
+    "grunt-notify": "~0.2.16",
+    "grunt-phpcs": "~0.2.1",
+    "grunt-po2mo": "^0.1.2",
+    "grunt-rm": "0.0.4",
+    "grunt-sass": "^1.0.0",
+    "matchdep": "~0.1.2"
+  }
+}
