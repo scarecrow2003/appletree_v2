@@ -72,12 +72,12 @@ function isPartOfCurrentMenuItem( $item )
 
                 <div class="header row">
                     <?php
-                    $temp = pathinfo(get_page_template(), PATHINFO_FILENAME);
+/*                    $temp = pathinfo(get_page_template(), PATHINFO_FILENAME);
                     $hasBanner = $temp == 'template-home' || $temp == 'template-general' || is_front_page();
-                    ?>
-                    <div class="logo-container" <?php if ($hasBanner) { echo 'id="logo-banner"';} ?>>
+                    */?>
+                    <div class="logo-container" <?php /*if ($hasBanner) { echo 'id="logo-banner"';} */?>>
                         <a href="/">
-                            <img class="logo" alt="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWAQMAAAAGz+OhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwTEBAAAAwqD1T20ND6AAAIB3Awu4AAFSPGZ8AAAAAElFTkSuQmCC">
+                            <img class="logo" alt="logo">
                         </a>
                     </div>
 

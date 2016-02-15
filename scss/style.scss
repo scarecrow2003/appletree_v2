@@ -116,11 +116,15 @@ p {
 }
 
 .banner {
-  margin-top: 20px;
+  margin-top: 30px !important;
   @media (min-width: 1500px) {
     width: 1500px;
     margin: 0 auto;
   }
+}
+
+.content {
+  margin-top: 30px !important;
 }
 
 .head-social {
@@ -214,21 +218,21 @@ p {
 
     .logo-container {
       position: absolute;
-      left: 5px;
-      top: 5px;
-      z-index: 10000;
-      width: 100px;
-      height: 100px;
+      left: 10px;
+      top: 20px;
+//      z-index: 10000;
+      width: 180px;
+      height: 60px;
     }
 
-    #logo-banner {
+    /*#logo-banner {
       @media (min-width: $screen-md-min) {
         left: 30px;
         top: 30px;
         width: 150px;
         height: 150px;
       }
-    }
+    }*/
   }
 
   .dashed-sep {
@@ -334,6 +338,7 @@ p {
   margin: 5px 0;
   >a>img {
     box-shadow: 3px 3px 1px #eeeeee;
+    border: 1px solid #eeeeee;
   }
 }
 
@@ -405,16 +410,16 @@ p {
   }
 }
 
-.email, .facebook, .pinterest, .twitter,
+.logo, .email, .facebook, .pinterest, .twitter,
 .popular
 { display: inline-block; background: url('images/sprites.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
 
-.email { background-position: 0 -151px; width: 24px; height: 24px; }
-.facebook { background-position: 0 -176px; width: 24px; height: 24px; }
-.pinterest { background-position: 0 -201px; width: 24px; height: 24px; }
-.twitter { background-position: 0 -226px; width: 24px; height: 24px; }
-.popular { background-position: 0 -252px; width: 16px; height: 16px; }
-.logo { max-width: 100%; background-size: 100%; background-image: url('images/sprites.png'); background-position: 0 0%; background-size: 100%; }
+.logo { background-position: -1px -0px; width: 180px; height: 60px; }
+.email { background-position: -1px -61px; width: 24px; height: 24px; }
+.facebook { background-position: -26px -61px; width: 24px; height: 24px; }
+.pinterest { background-position: -51px -61px; width: 24px; height: 24px; }
+.twitter { background-position: -76px -61px; width: 24px; height: 24px; }
+.popular { background-position: -101px -61px; width: 16px; height: 16px; }
 
 .pagination {
   width: 100%;
