@@ -80,7 +80,7 @@ html {
 body {
   font: normal 14px/16px $font-family-2;
   height:100%;
-  background-color: #fbf7ee;
+//  background-color: #fbf7ee;
 }
 
 h1 {
@@ -111,6 +111,14 @@ p {
 @media (min-width: $max-content-width){
   .site-header, .content {
     width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.banner {
+  margin-top: 20px;
+  @media (min-width: 1500px) {
+    width: 1500px;
     margin: 0 auto;
   }
 }
@@ -324,6 +332,9 @@ p {
 
 .cat-link {
   margin: 5px 0;
+  >a>img {
+    box-shadow: 3px 3px 1px #eeeeee;
+  }
 }
 
 .red_lable {
@@ -419,6 +430,15 @@ p {
 
 .page-content {
   margin-top: 30px;
+}
+
+.content-title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.content-h1, .content-h2 {
+  display: inline;
 }
 
 .post {

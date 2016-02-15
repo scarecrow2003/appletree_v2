@@ -15,7 +15,7 @@ get_header(); the_post(); ?>
         </div>
         <div class="col-xs-12">
         <?php
-        $uri = $_SERVER["REQUEST_URI"];
+/*        $uri = $_SERVER["REQUEST_URI"];
         $lid = strrpos($uri, '/');
         $slug = substr($uri, 1, $lid);
         $query_images_args = array(
@@ -47,7 +47,27 @@ get_header(); the_post(); ?>
             }
         }
         wp_reset_postdata();
-        ?>
+        */?>
+            <div class="col-sm-3 col-xs-6 cat-link">
+                <a href="<?php echo get_post_meta(get_the_ID(), 'linkone', true); ?>">
+                    <img src="<?php echo get_post_meta(get_the_ID(), 'imageone', true); ?>" width="300" height="307" class="img-responsive" alt="New born">
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6 cat-link">
+                <a href="<?php echo get_post_meta(get_the_ID(), 'linktwo', true); ?>">
+                    <img src="<?php echo get_post_meta(get_the_ID(), 'imagetwo', true); ?>" width="300" height="307" class="img-responsive" alt="Studio">
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6 cat-link">
+                <a href="<?php echo get_post_meta(get_the_ID(), 'linkthree', true); ?>">
+                    <img src="<?php echo get_post_meta(get_the_ID(), 'imagethree', true); ?>" width="300" height="307" class="img-responsive" alt="Outdoor">
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6 cat-link">
+                <a href="<?php echo get_post_meta(get_the_ID(), 'linkfour', true); ?>">
+                    <img src="<?php echo get_post_meta(get_the_ID(), 'imagefour', true); ?>" width="300" height="307" class="img-responsive" alt="Maternity">
+                </a>
+            </div>
         </div>
     </div>
 <?php endif; ?>
