@@ -17,6 +17,7 @@ $brand-primary: #bf8e27;
 $color-header-1: #663300;
 
 $color-grey-1: #e8e8e8;
+$color-grey-2: #ddd;
 
 $color-white: #ffffff;
 
@@ -33,6 +34,8 @@ $color-link-4: #F9A948;
 $color-menu-2: #FFF0E7;
 $color-menu-4: #191919;
 $color-menu-5: #502E0C;
+
+$text-color-1: #aaa;
 
 
 $font-size-2: 13px;
@@ -81,6 +84,7 @@ body {
   font: normal 14px/16px $font-family-2;
   height:100%;
 //  background-color: #fbf7ee;
+  color: $text-color-1;
 }
 
 h1 {
@@ -125,17 +129,6 @@ p {
 
 .content {
   margin-top: 30px !important;
-}
-
-.head-social {
-  margin-left: -95px;
-  @media (max-width: $screen-md-max) {
-    margin-left: -110px;
-  }
-  ul {
-    list-style-type: none; margin-top: 10px; padding: 0;
-    li { float: right; margin-left: 10px; }
-  }
 }
 
 #sidebar {
@@ -185,59 +178,150 @@ p {
   padding: 0;
   position: relative;
 
-  .lang-container {
-    margin-top: 15px;
-    width: 70px;
-    float: right;
-    a {
-      color: $color-header-1;
-    }
-
-    .lang {
-      display: inline;
-      padding: 2px;
-      margin: 2px;
-      width: 15px;
-      text-align: center;
-
-      a {
-        color: $color-header-1;
-      }
-    }
-
-    .selected {
-      a {
-        cursor: default;
-      }
-    }
-  }
-
   .header {
     height: 25px;
     padding: 0;
 
     .logo-container {
-      position: absolute;
-      left: 10px;
-      top: 20px;
-//      z-index: 10000;
+      display: block;
+      margin: 20px auto;
       width: 180px;
       height: 60px;
     }
-
-    /*#logo-banner {
-      @media (min-width: $screen-md-min) {
-        left: 30px;
-        top: 30px;
-        width: 150px;
-        height: 150px;
+    .social-container {
+      .head-social {
+        ul {
+          list-style-type: none; margin-top: 10px; padding: 0;
+          li { float: right; margin-left: 10px; }
+        }
       }
-    }*/
+    }
+    .lang-container {
+      margin-top: 20px;
+      text-align: right;
+      a {
+        color: $color-header-1;
+      }
+
+      .lang {
+        display: inline;
+        padding: 2px;
+        margin: 2px;
+        width: 15px;
+        text-align: center;
+
+        a {
+          color: $color-header-1;
+        }
+      }
+
+      .selected {
+        a {
+          cursor: default;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .menu-container {
+    position: relative;
+    top: -50px;
+    @media (max-width: 940px) {
+      top: -80px;
+    }
+    @media (max-width: $screen-xs-max) {
+      top: -15px;
+    }
+    .menu {
+      margin-bottom: 0;
+      margin-top: 5px;
+      min-height: 0;
+      font-family: $font-family-2;
+      font-size: $font-size-2;
+
+      .navbar {
+        @media (min-width: $screen-sm-max) {
+          margin-left: -100px;
+        }
+      }
+
+      .navbar-nav-custom {
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        text-align: center;
+
+        @media (max-width: 940px) {
+          width: 80%;
+        }
+
+        @media (max-width: 500px) {
+          margin-left: 50px
+        }
+
+        li {
+          display: inline-block;
+        }
+
+        .menu-item-level-1 {
+          min-width: 60px;
+
+          padding: 6px;
+          width: auto;
+          text-align: center;
+          border-radius: 6px 6px 0 0;
+          color: $color-2;
+          outline: none;
+
+          &:hover, &:focus {
+            //            padding-top: 5px;
+            //            border-top: 1px solid $color-grey-1;
+            color: $color-1;
+            //            background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        .active {
+          //        padding-top: 5px;
+          //        border-top: 1px solid $color-gold-1;
+          color: $color-1;
+          //        background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
+          border-radius: 6px 6px 0 0;
+        }
+
+        .dropdown-menu-custom {
+          position: absolute;
+          min-width: 100px;
+          min-height: 170px;
+          background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
+          border: none;
+          border-bottom: 1px solid $color-grey-1;
+          border-radius: 0;
+
+          li a {
+            padding: 2px 15px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
   }
 
   .dashed-sep {
-    margin-bottom: 10px;
-    border-bottom: 1px dashed grey;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $color-grey-2;
+    margin-top: -50px;
+    @media (max-width: 940px) {
+      margin-top: -80px;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin-top: -15px;
+    }
   }
 
   .navbar-header-custom {
@@ -249,86 +333,12 @@ p {
       background: $color-menu-5;
     }
   }
-
-  .menu {
-    margin-bottom: 0;
-    margin-top: 5px;
-    min-height: 0;
-    font-family: $font-family-2;
-    font-size: $font-size-2;
-
-    .navbar {
-      @media (min-width: $screen-sm-max) {
-        margin-left: -100px;
-      }
-    }
-
-    .navbar-nav-custom {
-      float:none;
-      margin: 0 auto;
-      display: table;
-      table-layout: fixed;
-
-      text-align: center;
-      li {
-        display: inline-block;
-      }
-
-      @media (max-width: 500px) {
-        margin-left: 50px
-      }
-
-      .menu-item-level-1 {
-        min-width: 60px;
-
-          padding: 6px;
-          width: auto;
-          text-align: center;
-          border-radius: 6px 6px 0 0;
-          color: $color-2;
-          outline: none;
-
-          &:hover, &:focus {
-//            padding-top: 5px;
-//            border-top: 1px solid $color-grey-1;
-            color: $color-1;
-//            background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
-          }
-        &:hover {
-          background-color: transparent;
-        }
-      }
-
-      .active {
-//        padding-top: 5px;
-//        border-top: 1px solid $color-gold-1;
-        color: $color-1;
-//        background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
-        border-radius: 6px 6px 0 0;
-      }
-
-      .dropdown-menu-custom {
-        position: absolute;
-        min-width: 100px;
-        min-height: 170px;
-        background-image: linear-gradient(to bottom, $color-white 0%, $color-grey-1 50%);
-        border: none;
-        border-bottom: 1px solid $color-grey-1;
-        border-radius: 0;
-
-        li a {
-          padding: 2px 15px;
-          font-weight: 300;
-        }
-      }
-    }
-  }
 }
 
 .apple-sep {
   margin: 10px 12px 5px 12px;
   text-align: center;
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px solid $color-grey-2;
   .popular {
     margin-bottom: -8px;
   }

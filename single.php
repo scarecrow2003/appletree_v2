@@ -9,7 +9,8 @@
 
 get_header(); ?>
 
-	<section class="page-content primary" role="main">
+	<!--<section class="page-content primary" role="main">-->
+    <div class="row wrapper content">
 
 		<?php
 			if ( have_posts() ) : the_post();
@@ -38,6 +39,7 @@ get_header(); ?>
 			endif;
 		?>
 
-	</section>
+    </div>
+	<!--</section>-->
 
 <?php get_footer(); ?>

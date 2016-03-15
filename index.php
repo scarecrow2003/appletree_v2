@@ -9,7 +9,8 @@
 
 get_header(); ?>
 
-	<section class="page-content primary" role="main">
+	<!--<section class="page-content primary" role="main">-->
+    <div class="row wrapper content">
         <h1>Recent Photo Shooting Sessions</h1>
 		<?php
 			if ( have_posts() ):
@@ -41,6 +42,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-part', 'pagination' ); ?>
 
 		</div>
-	</section>
+    </div>
+	<!--</section>-->
 
 <?php get_footer(); ?>
